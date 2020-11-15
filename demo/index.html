@@ -13,4 +13,14 @@ the following script includes the required mod
 <script type="text/javascript" src="../lib/jquery.autocomplete_geomod.js"></script>
 
 <script type="text/javascript" src="../geo_autocomplete.js"></script>
-<link rel="stylesheet"
+<link rel="stylesheet" type="text/css" href="../lib/jquery.autocomplete.css" />
+	
+<script type="text/javascript">
+$().ready(function() {
+
+    var latlng = new google.maps.LatLng(-34.397, 150.644);
+    var myOptions = {
+      zoom: 8,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
