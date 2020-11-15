@@ -24,3 +24,8 @@ $().ready(function() {
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+	// use all the autocomplete options as documented at http://docs.jquery.com/Plugins/Autocomplete
+	/* additional geo_autocomplete options:
+		mapkey : 'ABQ...' (requir
