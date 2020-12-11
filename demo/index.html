@@ -43,4 +43,20 @@ $().ready(function() {
 		scroll: true,
 		scrollHeight: 330
 	}).result(function(_event, _data) {
-		if (_data) map.fitBounds(_data.geometry.viewpo
+		if (_data) map.fitBounds(_data.geometry.viewport);
+	});
+
+});
+</script>
+<style>
+.ac_results li img {
+	float: left;
+	margin-right: 5px;
+}
+</style>
+</head>
+<body>
+<h3><a href="http://code.google.com/p/geo-autocomplete">jQuery geo-autocomplete Plugin</a> Demo</h3>
+
+<div>Location: <input type="text" id="location" /> (autocomplete)</div>
+<br
